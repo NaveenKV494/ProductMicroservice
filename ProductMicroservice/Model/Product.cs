@@ -1,7 +1,11 @@
-﻿namespace ProductMicroservice.Model
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace ProductMicroservice.Model
 {
+    [Keyless]
     public class Product
     {
+        
         int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
